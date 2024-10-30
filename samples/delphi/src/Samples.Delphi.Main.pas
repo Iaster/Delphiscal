@@ -286,17 +286,17 @@ procedure TFrmMain.btIcms10Click(Sender: TObject);
 var
   LIcms10: IIcms10;
 begin
-  LIcms10 := TIcms10.new.Create({}
-    StrToFloatDef(edValorProduto.Text, 0), {}
-    StrToFloatDef(edValorFrete.Text, 0), {}
-    StrToFloatDef(edValorSeguro.Text, 0), {}
-    StrToFloatDef(edValorDespesas.Text, 0), {}
-    StrToFloatDef(edValorDesconto.Text, 0), {}
-    StrToFloatDef(edAliqIcms.Text, 0), {}
-    StrToFloatDef(edAliqST.Text, 0), {}
-    StrToFloatDef(edMVA.Text, 0), {}
-    StrToFloatDef(edPercRedST.Text, 0), {}
-    StrToFloatDef(edValorIpi.Text, 0));
+  LIcms10 := TIcms10.new( StrToFloatDef(edValorProduto.Text, 0)
+                        , StrToFloatDef(edValorFrete.Text, 0)
+                        , StrToFloatDef(edValorSeguro.Text, 0)
+                        , StrToFloatDef(edValorDespesas.Text, 0)
+                        , StrToFloatDef(edValorDesconto.Text, 0)
+                        , StrToFloatDef(edAliqIcms.Text, 0)
+                        , StrToFloatDef(edAliqST.Text, 0)
+                        , StrToFloatDef(edMVA.Text, 0)
+                        , StrToFloatDef(edPercRedST.Text, 0)
+                        , StrToFloatDef(edValorIpi.Text, 0)
+                        );
 
   lbVBC10.Caption          := LIcms10.ValorBaseIcmsProprio.ToString;
   lbVICMS10.Caption        := LIcms10.ValorIcmsProprio.ToString;

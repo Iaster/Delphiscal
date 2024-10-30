@@ -2,27 +2,27 @@ object FrmMain: TFrmMain
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
-  BorderStyle = bsSingle
   Caption = 'Delphiscal - Biblioteca de c'#225'lculos fiscais em Delphi'
   ClientHeight = 673
-  ClientWidth = 1031
+  ClientWidth = 1099
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -12
+  Font.Height = -16
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poScreenCenter
-  TextHeight = 15
+  TextHeight = 21
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1031
+    Width = 1099
     Height = 233
     Align = alTop
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
+    ExplicitWidth = 1031
     object Image1: TImage
       Left = 0
       Top = 0
@@ -6653,129 +6653,130 @@ object FrmMain: TFrmMain
   object PageControl1: TPageControl
     Left = 0
     Top = 233
-    Width = 1031
+    Width = 1099
     Height = 440
-    ActivePage = TabSheet5
+    ActivePage = TabSheet1
     Align = alClient
     TabOrder = 1
+    ExplicitWidth = 1031
     object TabSheet1: TTabSheet
       Caption = 'Icms Pr'#243'prio'
       object Label2: TLabel
         Left = 3
-        Top = 62
-        Width = 75
-        Height = 15
+        Top = 60
+        Width = 100
+        Height = 21
         Caption = 'Valor do Frete:'
       end
       object Label3: TLabel
-        Left = 4
-        Top = 94
-        Width = 86
-        Height = 15
+        Left = 3
+        Top = 95
+        Width = 115
+        Height = 21
         Caption = 'Valor do Seguro:'
       end
       object Label4: TLabel
-        Left = 4
-        Top = 127
-        Width = 97
-        Height = 15
+        Left = 3
+        Top = 130
+        Width = 130
+        Height = 21
         Caption = 'Valor do Despesas:'
       end
       object Label5: TLabel
-        Left = 4
-        Top = 161
-        Width = 99
-        Height = 15
+        Left = 3
+        Top = 165
+        Width = 130
+        Height = 21
         Caption = 'Valor do Desconto:'
       end
       object Label6: TLabel
         Left = 3
-        Top = 196
-        Width = 62
-        Height = 15
+        Top = 200
+        Width = 82
+        Height = 21
         Caption = 'Valor do Ipi:'
       end
       object Label9: TLabel
-        Left = 4
-        Top = 229
-        Width = 79
-        Height = 15
+        Left = 3
+        Top = 235
+        Width = 102
+        Height = 21
         Caption = 'Al'#237'quota ICMS:'
       end
       object Label21: TLabel
-        Left = 4
-        Top = 261
-        Width = 108
-        Height = 15
+        Left = 3
+        Top = 272
+        Width = 139
+        Height = 21
         Caption = 'Percentual Redu'#231#227'o:'
       end
       object Label22: TLabel
-        Left = 4
-        Top = 291
-        Width = 125
-        Height = 15
+        Left = 3
+        Top = 305
+        Width = 162
+        Height = 21
         Caption = 'Percentual Diferimento:'
       end
       object Label1: TLabel
-        Left = 4
-        Top = 35
-        Width = 92
-        Height = 15
+        Left = 3
+        Top = 25
+        Width = 121
+        Height = 21
         Caption = 'Valor do Produto:'
       end
       object edValorFrete: TEdit
-        Left = 145
-        Top = 61
+        Left = 176
+        Top = 57
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 0
         Text = '4,74'
       end
       object edValorSeguro: TEdit
-        Left = 145
-        Top = 91
+        Left = 176
+        Top = 92
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 1
         Text = '1,89'
       end
       object edValorDespesas: TEdit
-        Left = 145
-        Top = 124
+        Left = 176
+        Top = 127
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 2
         Text = '0,95'
       end
       object edValorDesconto: TEdit
-        Left = 145
-        Top = 158
+        Left = 176
+        Top = 162
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 3
         Text = '2,37'
       end
       object edValorIpi: TEdit
-        Left = 145
-        Top = 193
+        Left = 176
+        Top = 197
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 4
         Text = '0,00'
       end
       object GroupBox1: TGroupBox
-        Left = 256
-        Top = 24
+        Left = 271
+        Top = 22
         Width = 241
         Height = 289
         Caption = 'Icms00'
@@ -6783,35 +6784,41 @@ object FrmMain: TFrmMain
         object Label7: TLabel
           Left = 16
           Top = 37
-          Width = 129
-          Height = 15
+          Width = 168
+          Height = 21
           Caption = 'Base Icms Pr'#243'prio (vBC):'
         end
         object Label8: TLabel
           Left = 16
           Top = 96
-          Width = 144
-          Height = 15
+          Width = 190
+          Height = 21
           Caption = 'Valor Icms Pr'#243'prio (vICMS):'
         end
         object lbVBC00: TLabel
           Left = 168
           Top = 61
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMS00: TLabel
           Left = 168
           Top = 116
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object GroupBox2: TGroupBox
-        Left = 503
-        Top = 24
+        Left = 518
+        Top = 22
         Width = 241
         Height = 289
         Caption = 'Icms20'
@@ -6819,113 +6826,134 @@ object FrmMain: TFrmMain
         object lbVICMS20: TLabel
           Left = 168
           Top = 125
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label11: TLabel
           Left = 16
           Top = 96
-          Width = 144
-          Height = 15
+          Width = 190
+          Height = 21
           Caption = 'Valor Icms Pr'#243'prio (vICMS):'
         end
         object lbVBC20: TLabel
           Left = 168
           Top = 61
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label13: TLabel
           Left = 16
           Top = 37
-          Width = 129
-          Height = 15
+          Width = 168
+          Height = 21
           Caption = 'Base Icms Pr'#243'prio (vBC):'
         end
         object Label14: TLabel
           Left = 16
           Top = 160
-          Width = 201
-          Height = 15
+          Width = 266
+          Height = 21
           Caption = 'Valor Icms Desonerado (vICMSDeson):'
         end
         object lbVICMSDESON20: TLabel
           Left = 168
           Top = 189
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object GroupBox3: TGroupBox
-        Left = 750
-        Top = 27
-        Width = 241
+        Left = 765
+        Top = 22
+        Width = 251
         Height = 286
         Caption = 'Icms51'
         TabOrder = 13
         object Label10: TLabel
           Left = 16
           Top = 34
-          Width = 129
-          Height = 15
+          Width = 168
+          Height = 21
           Caption = 'Base Icms Pr'#243'prio (vBC):'
         end
         object lbVBC51: TLabel
           Left = 160
           Top = 58
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label15: TLabel
           Left = 16
           Top = 93
-          Width = 172
-          Height = 15
+          Width = 226
+          Height = 21
           Caption = 'Valor Icms Opera'#231#227'o (vICMSOP):'
         end
         object lbVICMSOP: TLabel
           Left = 160
           Top = 122
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label17: TLabel
           Left = 16
           Top = 157
-          Width = 164
-          Height = 15
+          Width = 217
+          Height = 21
           Caption = 'Valor Icms Diferido (vICMSDIF):'
         end
         object lbVICMSDIF: TLabel
           Left = 160
           Top = 186
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label19: TLabel
           Left = 21
           Top = 221
-          Width = 144
-          Height = 15
+          Width = 190
+          Height = 21
           Caption = 'Valor Icms Pr'#243'prio (vICMS):'
         end
         object lbVICMS51: TLabel
           Left = 161
           Top = 250
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object btIcms00: TButton
-        Left = 256
-        Top = 324
+        Left = 271
+        Top = 319
         Width = 241
         Height = 39
         Caption = 'Calcular ICMS 00'
@@ -6933,8 +6961,8 @@ object FrmMain: TFrmMain
         OnClick = btIcms00Click
       end
       object btIcms20: TButton
-        Left = 503
-        Top = 324
+        Left = 518
+        Top = 319
         Width = 241
         Height = 39
         Caption = 'Calcular ICMS 20'
@@ -6942,49 +6970,49 @@ object FrmMain: TFrmMain
         OnClick = btIcms20Click
       end
       object btIcms51: TButton
-        Left = 750
-        Top = 324
-        Width = 241
+        Left = 765
+        Top = 319
+        Width = 251
         Height = 39
         Caption = 'Calcular ICMS 51'
         TabOrder = 10
         OnClick = btIcms51Click
       end
       object edAliqIcms: TEdit
-        Left = 145
-        Top = 226
+        Left = 176
+        Top = 232
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 5
         Text = '12,00'
       end
       object edReducao: TEdit
-        Left = 145
-        Top = 258
+        Left = 176
+        Top = 267
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 6
         Text = '10,00'
       end
       object edDiferimento: TEdit
-        Left = 145
-        Top = 288
+        Left = 176
+        Top = 302
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 7
         Text = '10,00'
       end
       object edValorProduto: TEdit
-        Left = 145
-        Top = 32
+        Left = 176
+        Top = 22
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 14
@@ -6995,130 +7023,148 @@ object FrmMain: TFrmMain
       Caption = 'Icms-ST'
       ImageIndex = 1
       object Label37: TLabel
-        Left = 4
-        Top = 37
-        Width = 63
-        Height = 15
+        Left = 3
+        Top = 25
+        Width = 82
+        Height = 21
         Caption = 'Al'#237'quota ST:'
       end
       object Label38: TLabel
-        Left = 4
-        Top = 66
-        Width = 136
-        Height = 15
+        Left = 3
+        Top = 57
+        Width = 177
+        Height = 21
         Caption = 'Perc.Redu'#231#227'o de Base  ST:'
       end
       object Label39: TLabel
-        Left = 4
-        Top = 95
-        Width = 87
-        Height = 15
+        Left = 3
+        Top = 96
+        Width = 112
+        Height = 21
         Caption = 'Percentual MVA:'
       end
       object GroupBox4: TGroupBox
-        Left = 758
-        Top = 34
-        Width = 241
-        Height = 324
+        Left = 773
+        Top = 22
+        Width = 314
+        Height = 327
         Caption = 'Icms70'
         TabOrder = 0
         object lbVBC70: TLabel
           Left = 168
           Top = 50
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMS70: TLabel
           Left = 168
           Top = 107
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMSDeson70: TLabel
           Left = 168
           Top = 162
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVBCST70: TLabel
           Left = 169
           Top = 207
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMSST70: TLabel
           Left = 168
           Top = 249
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMSSTDeson70: TLabel
           Left = 168
           Top = 301
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label12: TLabel
           Left = 9
           Top = 29
-          Width = 129
-          Height = 15
+          Width = 168
+          Height = 21
           Caption = 'Base Icms Pr'#243'prio (vBC):'
         end
         object Label18: TLabel
           Left = 9
           Top = 88
-          Width = 144
-          Height = 15
+          Width = 190
+          Height = 21
           Caption = 'Valor Icms Pr'#243'prio (vICMS):'
         end
         object Label23: TLabel
           Left = 9
           Top = 189
-          Width = 114
-          Height = 15
+          Width = 150
+          Height = 21
           Caption = 'Base Icms ST (vBCST):'
         end
         object Label25: TLabel
           Left = 9
           Top = 232
-          Width = 129
-          Height = 15
+          Width = 172
+          Height = 21
           Caption = 'Valor Icms ST (vICMSST):'
         end
         object Label46: TLabel
           Left = 8
           Top = 282
-          Width = 225
-          Height = 15
+          Width = 300
+          Height = 21
           Caption = 'Valor IcmsST Desonerado (vICMSSTDeson):'
         end
         object Label48: TLabel
           Left = 9
           Top = 141
-          Width = 201
-          Height = 15
+          Width = 266
+          Height = 21
           Caption = 'Valor Icms Desonerado (vICMSDeson):'
         end
       end
       object btIcms70: TButton
-        Left = 758
-        Top = 364
-        Width = 241
+        Left = 773
+        Top = 355
+        Width = 314
         Height = 39
         Caption = 'Calcular ICMS 70'
         TabOrder = 1
         OnClick = btIcms70Click
       end
       object GroupBox5: TGroupBox
-        Left = 511
-        Top = 31
+        Left = 526
+        Top = 22
         Width = 241
         Height = 327
         Caption = 'Icms30'
@@ -7126,49 +7172,58 @@ object FrmMain: TFrmMain
         object Label27: TLabel
           Left = 9
           Top = 32
-          Width = 114
-          Height = 15
+          Width = 150
+          Height = 21
           Caption = 'Base Icms ST (vBCST):'
         end
         object lbVBCST30: TLabel
           Left = 160
           Top = 56
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label29: TLabel
           Left = 9
           Top = 91
-          Width = 129
-          Height = 15
+          Width = 172
+          Height = 21
           Caption = 'Valor Icms ST (vICMSST):'
         end
         object lbVICMSST30: TLabel
           Left = 160
           Top = 111
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label31: TLabel
           Left = 8
           Top = 147
-          Width = 225
-          Height = 15
+          Width = 300
+          Height = 21
           Caption = 'Valor IcmsST Desonerado (vICMSSTDeson):'
         end
         object lbVICMSSTDeson30: TLabel
           Left = 160
           Top = 178
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object btIcms30: TButton
-        Left = 511
-        Top = 364
+        Left = 526
+        Top = 355
         Width = 241
         Height = 39
         Caption = 'Calcular ICMS 30'
@@ -7176,8 +7231,8 @@ object FrmMain: TFrmMain
         OnClick = btIcms30Click
       end
       object GroupBox6: TGroupBox
-        Left = 264
-        Top = 31
+        Left = 279
+        Top = 22
         Width = 241
         Height = 327
         Caption = 'Icms10'
@@ -7185,77 +7240,92 @@ object FrmMain: TFrmMain
         object Label33: TLabel
           Left = 9
           Top = 32
-          Width = 129
-          Height = 15
+          Width = 168
+          Height = 21
           Caption = 'Base Icms Pr'#243'prio (vBC):'
         end
         object Label34: TLabel
           Left = 9
           Top = 91
-          Width = 144
-          Height = 15
+          Width = 190
+          Height = 21
           Caption = 'Valor Icms Pr'#243'prio (vICMS):'
         end
         object lbVBC10: TLabel
           Left = 164
           Top = 53
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMS10: TLabel
           Left = 164
           Top = 108
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label40: TLabel
           Left = 9
           Top = 152
-          Width = 114
-          Height = 15
+          Width = 150
+          Height = 21
           Caption = 'Base Icms ST (vBCST):'
         end
         object Label41: TLabel
           Left = 9
           Top = 211
-          Width = 129
-          Height = 15
+          Width = 172
+          Height = 21
           Caption = 'Valor Icms ST (vICMSST):'
         end
         object lbVBCST10: TLabel
           Left = 164
           Top = 173
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMSST10: TLabel
           Left = 164
           Top = 228
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label44: TLabel
           Left = 9
           Top = 267
-          Width = 225
-          Height = 15
+          Width = 300
+          Height = 21
           Caption = 'Valor IcmsST Desonerado (vICMSSTDeson):'
         end
         object lbVICMSSTDeson10: TLabel
           Left = 164
           Top = 295
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object btIcms10: TButton
-        Left = 264
-        Top = 364
+        Left = 279
+        Top = 355
         Width = 241
         Height = 39
         Caption = 'Calcular ICMS 10'
@@ -7263,30 +7333,30 @@ object FrmMain: TFrmMain
         OnClick = btIcms10Click
       end
       object edAliqST: TEdit
-        Left = 145
-        Top = 34
+        Left = 184
+        Top = 22
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 6
         Text = '18,00'
       end
       object edPercRedST: TEdit
-        Left = 145
-        Top = 63
+        Left = 184
+        Top = 58
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 7
         Text = '10,00'
       end
       object edMVA: TEdit
-        Left = 145
-        Top = 92
+        Left = 184
+        Top = 93
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 8
@@ -7297,70 +7367,77 @@ object FrmMain: TFrmMain
       Caption = 'CSOSN'
       ImageIndex = 3
       object Label16: TLabel
-        Left = 4
-        Top = 37
-        Width = 119
-        Height = 15
+        Left = 3
+        Top = 25
+        Width = 155
+        Height = 21
         Caption = 'Percentual Cr'#233'dito SN:'
       end
       object edPercentualCreditoSN: TEdit
-        Left = 145
-        Top = 34
+        Left = 170
+        Top = 22
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 0
         Text = '1,25'
       end
       object GroupBox7: TGroupBox
-        Left = 240
-        Top = 31
-        Width = 185
-        Height = 327
+        Left = 265
+        Top = 22
+        Width = 218
+        Height = 324
+        Margins.Top = 0
         Caption = 'Csosn101'
         TabOrder = 1
         object Label20: TLabel
           Left = 9
           Top = 32
-          Width = 147
-          Height = 15
+          Width = 192
+          Height = 21
           Caption = 'Perc. Cr'#233'dito SN (pCredSN):'
         end
         object lbPCredSN101: TLabel
           Left = 112
           Top = 53
-          Width = 21
-          Height = 15
+          Width = 30
+          Height = 21
           Caption = '0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label26: TLabel
           Left = 9
           Top = 91
-          Width = 146
-          Height = 15
+          Width = 195
+          Height = 21
           Caption = 'Valor Cr'#233'dito SN (vCredSN):'
         end
         object lbVcredSN101: TLabel
           Left = 112
           Top = 108
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object btIcms101: TButton
-        Left = 240
-        Top = 364
-        Width = 185
+        Left = 265
+        Top = 352
+        Width = 218
         Height = 39
         Caption = 'Calcular CSOSN 101'
         TabOrder = 2
         OnClick = btIcms101Click
       end
       object GroupBox8: TGroupBox
-        Left = 455
-        Top = 33
+        Left = 489
+        Top = 22
         Width = 241
         Height = 324
         Caption = 'Csosn201'
@@ -7368,63 +7445,75 @@ object FrmMain: TFrmMain
         object lbVBCST201: TLabel
           Left = 169
           Top = 167
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMSST201: TLabel
           Left = 168
           Top = 209
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label45: TLabel
           Left = 9
           Top = 149
-          Width = 114
-          Height = 15
+          Width = 150
+          Height = 21
           Caption = 'Base Icms ST (vBCST):'
         end
         object Label47: TLabel
           Left = 9
           Top = 192
-          Width = 129
-          Height = 15
+          Width = 172
+          Height = 21
           Caption = 'Valor Icms ST (vICMSST):'
         end
         object Label24: TLabel
           Left = 9
           Top = 30
-          Width = 147
-          Height = 15
+          Width = 192
+          Height = 21
           Caption = 'Perc. Cr'#233'dito SN (pCredSN):'
         end
         object lbPCredSN201: TLabel
           Left = 168
           Top = 51
-          Width = 21
-          Height = 15
+          Width = 30
+          Height = 21
           Caption = '0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label30: TLabel
           Left = 9
           Top = 89
-          Width = 146
-          Height = 15
+          Width = 195
+          Height = 21
           Caption = 'Valor Cr'#233'dito SN (vCredSN):'
         end
         object lbVCredSN201: TLabel
           Left = 168
           Top = 106
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object btIcms201: TButton
-        Left = 455
-        Top = 363
+        Left = 489
+        Top = 352
         Width = 241
         Height = 39
         Caption = 'Calcular ICMS 201'
@@ -7432,8 +7521,8 @@ object FrmMain: TFrmMain
         OnClick = btIcms201Click
       end
       object GroupBox9: TGroupBox
-        Left = 711
-        Top = 33
+        Left = 736
+        Top = 22
         Width = 241
         Height = 324
         Caption = 'Csosn 202 e 203'
@@ -7441,35 +7530,41 @@ object FrmMain: TFrmMain
         object lbVBCST202: TLabel
           Left = 177
           Top = 48
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object lbVICMSST202: TLabel
           Left = 176
           Top = 90
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label35: TLabel
           Left = 17
           Top = 30
-          Width = 114
-          Height = 15
+          Width = 150
+          Height = 21
           Caption = 'Base Icms ST (vBCST):'
         end
         object Label36: TLabel
           Left = 17
           Top = 73
-          Width = 129
-          Height = 15
+          Width = 172
+          Height = 21
           Caption = 'Valor Icms ST (vICMSST):'
         end
       end
       object btIcms202_203: TButton
-        Left = 711
-        Top = 363
+        Left = 736
+        Top = 352
         Width = 241
         Height = 39
         Caption = 'Calcular ICMS 202 e 203'
@@ -7482,105 +7577,114 @@ object FrmMain: TFrmMain
       ImageIndex = 4
       object Label28: TLabel
         Left = 0
-        Top = 37
-        Width = 64
-        Height = 15
+        Top = 25
+        Width = 82
+        Height = 21
         Caption = 'Al'#237'quota IPI:'
       end
       object Label42: TLabel
         Left = 0
-        Top = 66
-        Width = 86
-        Height = 15
+        Top = 59
+        Width = 115
+        Height = 21
         Caption = 'Valor IPI por UN:'
       end
       object Label49: TLabel
         Left = 0
         Top = 95
-        Width = 126
-        Height = 15
+        Width = 165
+        Height = 21
         Caption = 'Quantidade IPI Tribuata:'
       end
       object edAliqIpi: TEdit
-        Left = 141
-        Top = 34
+        Left = 181
+        Top = 22
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 0
         Text = '10,00'
       end
       object GroupBox10: TGroupBox
-        Left = 236
-        Top = 30
-        Width = 185
+        Left = 276
+        Top = 14
+        Width = 189
         Height = 327
         Caption = 'IPI 50 AdValorem'
         TabOrder = 1
         object Label32: TLabel
           Left = 9
           Top = 32
-          Width = 116
-          Height = 15
+          Width = 149
+          Height = 21
           Caption = 'Base de c'#225'lculo (vBC):'
         end
         object lbvBCIpi50av: TLabel
           Left = 112
           Top = 53
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label43: TLabel
           Left = 9
           Top = 91
-          Width = 75
-          Height = 15
+          Width = 99
+          Height = 21
           Caption = 'Valor IPI (vIPI):'
         end
         object lbVIPI50av: TLabel
           Left = 112
           Top = 108
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object GroupBox11: TGroupBox
-        Left = 451
-        Top = 30
+        Left = 476
+        Top = 22
         Width = 241
-        Height = 327
+        Height = 319
         Caption = 'IPI 50 Aliq. Espec'#237'fica'
         TabOrder = 2
         object Label54: TLabel
           Left = 9
           Top = 30
-          Width = 144
-          Height = 15
+          Width = 189
+          Height = 21
           Caption = 'Valor IPI Por UN. Trib. (vIPI):'
         end
         object lbVipi50Especifico: TLabel
           Left = 168
           Top = 51
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object btIpi50AdValorem: TButton
-        Left = 236
-        Top = 363
-        Width = 185
+        Left = 276
+        Top = 347
+        Width = 189
         Height = 39
         Caption = 'Calcular IPI 50 AdValorem'
         TabOrder = 3
         OnClick = btIpi50AdValoremClick
       end
       object btIpi50AliqEspecifica: TButton
-        Left = 451
-        Top = 363
+        Left = 476
+        Top = 347
         Width = 241
         Height = 39
         Caption = 'Calcular IPI 50 Aliq. Espec'#237'fica'
@@ -7588,20 +7692,20 @@ object FrmMain: TFrmMain
         OnClick = btIpi50AliqEspecificaClick
       end
       object edValorIpiUn: TEdit
-        Left = 141
-        Top = 63
+        Left = 181
+        Top = 57
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 5
         Text = '0,764'
       end
       object edQtdeIpiTributada: TEdit
-        Left = 141
+        Left = 181
         Top = 92
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 6
@@ -7612,59 +7716,59 @@ object FrmMain: TFrmMain
       Caption = 'PIS'
       ImageIndex = 5
       object Label50: TLabel
-        Left = 8
-        Top = 37
-        Width = 67
-        Height = 15
+        Left = 3
+        Top = 27
+        Width = 87
+        Height = 21
         Caption = 'Al'#237'quota PIS:'
       end
       object Label51: TLabel
-        Left = 8
-        Top = 66
-        Width = 89
-        Height = 15
+        Left = 3
+        Top = 54
+        Width = 120
+        Height = 21
         Caption = 'Valor PIS por UN:'
       end
       object Label52: TLabel
-        Left = 8
-        Top = 95
-        Width = 129
-        Height = 15
+        Left = 0
+        Top = 85
+        Width = 170
+        Height = 21
         Caption = 'Quantidade PIS Tribuata:'
       end
       object edAliqPis: TEdit
-        Left = 149
-        Top = 34
+        Left = 184
+        Top = 24
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 0
         Text = '0,65'
       end
       object edValorPisUn: TEdit
-        Left = 149
-        Top = 63
+        Left = 184
+        Top = 53
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 1
         Text = '0,764'
       end
       object edQtdePisUn: TEdit
-        Left = 149
-        Top = 92
+        Left = 184
+        Top = 82
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 2
         Text = '15,00'
       end
       object GroupBox12: TGroupBox
-        Left = 244
-        Top = 30
+        Left = 284
+        Top = 22
         Width = 185
         Height = 327
         Caption = 'PIS 01 ou 02'
@@ -7672,66 +7776,75 @@ object FrmMain: TFrmMain
         object Label53: TLabel
           Left = 9
           Top = 32
-          Width = 116
-          Height = 15
+          Width = 149
+          Height = 21
           Caption = 'Base de c'#225'lculo (vBC):'
         end
         object lbVBCPIS01_02: TLabel
           Left = 112
           Top = 53
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label56: TLabel
           Left = 9
           Top = 91
-          Width = 81
-          Height = 15
+          Width = 109
+          Height = 21
           Caption = 'Valor PIS (vPIS):'
         end
         object lbVPIS01_02: TLabel
           Left = 112
           Top = 108
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object GroupBox13: TGroupBox
-        Left = 459
-        Top = 30
+        Left = 475
+        Top = 24
         Width = 241
-        Height = 327
+        Height = 325
         Caption = 'PIS 03'
         TabOrder = 4
         object Label58: TLabel
           Left = 9
           Top = 30
-          Width = 150
-          Height = 15
+          Width = 199
+          Height = 21
           Caption = 'Valor PIS Por UN. Trib. (vPIS):'
         end
         object lbVPIS03: TLabel
           Left = 168
           Top = 51
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object btPis0102: TButton
-        Left = 244
-        Top = 361
-        Width = 185
+        Left = 281
+        Top = 355
+        Width = 188
         Height = 39
         Caption = 'Calcular PIS 01 ou 02'
         TabOrder = 5
         OnClick = btPis0102Click
       end
       object btPis03: TButton
-        Left = 459
-        Top = 361
+        Left = 475
+        Top = 355
         Width = 241
         Height = 39
         Caption = 'Calcular PIS 03'
@@ -7744,126 +7857,135 @@ object FrmMain: TFrmMain
       ImageIndex = 6
       object Label55: TLabel
         Left = 3
-        Top = 41
-        Width = 92
-        Height = 15
+        Top = 25
+        Width = 120
+        Height = 21
         Caption = 'Al'#237'quota COFINS:'
       end
       object Label57: TLabel
         Left = 3
-        Top = 70
-        Width = 114
-        Height = 15
+        Top = 60
+        Width = 153
+        Height = 21
         Caption = 'Valor COFINS por UN:'
       end
       object Label59: TLabel
         Left = 3
-        Top = 99
-        Width = 134
-        Height = 15
+        Top = 95
+        Width = 176
+        Height = 21
         Caption = 'Quantidade COFINS Trib.:'
       end
       object edAliqCofins: TEdit
-        Left = 157
-        Top = 38
+        Left = 197
+        Top = 22
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 0
         Text = '3,00'
       end
       object edValorCofinsUn: TEdit
-        Left = 157
-        Top = 67
+        Left = 197
+        Top = 57
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 1
         Text = '0,764'
       end
       object edQtdeCofinsUn: TEdit
-        Left = 157
-        Top = 96
+        Left = 197
+        Top = 92
         Width = 89
-        Height = 23
+        Height = 29
         BiDiMode = bdRightToLeft
         ParentBiDiMode = False
         TabOrder = 2
         Text = '15,00'
       end
       object GroupBox14: TGroupBox
-        Left = 252
-        Top = 34
-        Width = 185
+        Left = 292
+        Top = 22
+        Width = 205
         Height = 327
         Caption = 'COFINS 01 ou 02'
         TabOrder = 3
         object Label60: TLabel
           Left = 9
           Top = 32
-          Width = 116
-          Height = 15
+          Width = 149
+          Height = 21
           Caption = 'Base de c'#225'lculo (vBC):'
         end
         object lbVBCCOFINS01_02: TLabel
           Left = 112
           Top = 53
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
         object Label62: TLabel
           Left = 9
           Top = 91
-          Width = 131
-          Height = 15
+          Width = 175
+          Height = 21
           Caption = 'Valor COFINS (vCOFINS):'
         end
         object lbVCOFINS01_02: TLabel
           Left = 112
           Top = 108
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object GroupBox15: TGroupBox
-        Left = 467
-        Top = 34
-        Width = 241
+        Left = 503
+        Top = 22
+        Width = 286
         Height = 327
         Caption = 'COFINS 03'
         TabOrder = 4
         object Label64: TLabel
           Left = 9
           Top = 30
-          Width = 200
-          Height = 15
+          Width = 265
+          Height = 21
           Caption = 'Valor COFINS Por UN. Trib. (vCOFINS):'
         end
         object lbVCOFINS03: TLabel
           Left = 168
           Top = 51
-          Width = 37
-          Height = 15
+          Width = 53
+          Height = 21
           Caption = 'R$ 0,00'
+          Color = clMintcream
+          ParentColor = False
+          Transparent = False
         end
       end
       object btCofins0102: TButton
-        Left = 252
-        Top = 365
-        Width = 185
+        Left = 292
+        Top = 355
+        Width = 205
         Height = 39
         Caption = 'Calcular COFINS 01 ou 02'
         TabOrder = 5
         OnClick = btCofins0102Click
       end
       object btCofins03: TButton
-        Left = 467
-        Top = 365
-        Width = 241
+        Left = 503
+        Top = 355
+        Width = 286
         Height = 39
         Caption = 'Calcular COFINS 03'
         TabOrder = 6
